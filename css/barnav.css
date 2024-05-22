@@ -1,0 +1,121 @@
+#barnav-logoizq {
+    width: 123px;
+    height: 123px;
+}
+
+#barnav-anchocentro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #1c4e80;
+    padding: 13px;
+}
+
+#barnav-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    font-family: Inlanders;
+    font-size: 20px;
+}
+
+#barnav-seccionesder li {
+    cursor: pointer;
+    display: inline;
+    color: #f0f4f8;
+    background-color: #72a4d2;
+    box-shadow: 5px 5px #133353;
+    padding: 13px;
+    margin: 5px;
+    transition: all 0.3s ease;
+    position: relative;
+    z-index: 99;
+}
+
+#barnav-seccionesder a {
+    color: #f0f4f8;
+}
+
+#barnav-seccionesder li:hover {
+    color: #f0f4f8;
+    background-color: #0061bd;
+    box-shadow: 5px 5px #133353;
+}
+
+.selected {
+    color: #f0f4f8 !important;
+    background-color: #0084ff !important;
+    box-shadow: 5px 5px #133353 !important;
+}
+
+#barnav-seccionesder #billete {
+    margin-left: 5px;
+    transform: rotate(75deg);
+}
+
+#barnav-seccionesder #billete2 {
+    margin-left: 35px;
+    transform: rotate(105deg);
+}
+
+@keyframes billeteAnimacion {
+    0%, 100% {
+        top: 30px;
+    }
+    50% {
+        top: 25px;
+    }
+}
+
+#barnav-seccionesder #billete,
+#barnav-seccionesder #billete2 {
+    z-index: 1;
+    width: 60px;
+    height: 60px;
+    padding: 0;
+    opacity: 0;
+    transition: all 0.3s ease;
+    position: absolute;
+    top: 30px;
+    animation: billeteAnimacion 0.7s ease infinite alternate; /* Iniciamos la animación */
+}
+
+@keyframes liveAnimacion {
+    0% {
+        top: 13px;
+    }
+    100% {
+        top: 3px;
+    }
+}
+
+#barnav-seccionesder #livegif {
+    z-index: 1;
+    width: 70px;
+    height: 60px;
+    padding: 0;
+    opacity: 1;
+    transition: all 0.3s ease;
+    position: absolute;
+    margin-left: 23px;
+    opacity: 0;
+    animation: liveAnimacion 0.5s ease infinite alternate; /* Iniciamos la animación */
+}
+
+#barnav-seccionesder #staffgif {
+    z-index: 1;
+    width: 70px;
+    height: 60px;
+    padding: 0;
+    opacity: 1;
+    top: 2px;
+    transition: all 0.3s ease;
+    position: absolute;
+    margin-left: 13px;
+    opacity: 0;
+}
+
+
+
