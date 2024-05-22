@@ -82,6 +82,15 @@
     animation: billeteAnimacion 0.7s ease infinite alternate; /* Iniciamos la animación */
 }
 
+@keyframes liveAnimacion {
+    0% {
+        top: 10px;
+    }
+    100% {
+        top: 0;
+    }
+}
+
 #barnav-seccionesder #livegif {
     z-index: 1;
     width: 70px;
@@ -93,6 +102,7 @@
     position: absolute;
     margin-left: 23px;
     opacity: 0;
+    animation: liveAnimacion 0.5s ease infinite alternate; /* Iniciamos la animación */
 }
 
 
