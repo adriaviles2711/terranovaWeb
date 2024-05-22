@@ -8,7 +8,9 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    background-color: #1c4e80;
+    background-image: url("../src/base.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
     padding: 13px;
 }
 
@@ -17,8 +19,9 @@
     justify-content: space-between;
     align-items: center;
     width: 70%;
-    font-family: Impact;
-    font-size: 20px;
+    font-family: Cutefont;
+    font-weight: bold;
+    font-size: 27px;
 }
 
 #barnav-seccionesder li {
@@ -51,12 +54,12 @@
 }
 
 #barnav-seccionesder #billete {
-    margin-left: 5px;
+    margin-left: 2px;
     transform: rotate(75deg);
 }
 
 #barnav-seccionesder #billete2 {
-    margin-left: 35px;
+    margin-left: 31px;
     transform: rotate(105deg);
 }
 
@@ -99,7 +102,7 @@
     opacity: 1;
     transition: all 0.3s ease;
     position: absolute;
-    margin-left: 23px;
+    margin-left: 22px;
     opacity: 0;
     animation: liveAnimacion 0.5s ease infinite alternate; /* Iniciamos la animación */
 }
@@ -113,7 +116,7 @@
     top: 2px;
     transition: all 0.3s ease;
     position: absolute;
-    margin-left: 13px;
+    margin-left: 10px;
     opacity: 0;
 }
 
