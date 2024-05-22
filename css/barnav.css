@@ -82,5 +82,18 @@
     animation: billeteAnimacion 0.7s ease infinite alternate; /* Iniciamos la animación */
 }
 
+#barnav-seccionesder #livegif {
+    z-index: 1;
+    width: 70px;
+    height: 60px;
+    padding: 0;
+    opacity: 1;
+    top: 0;
+    transition: all 0.3s ease;
+    position: absolute;
+    margin-left: 23px;
+    opacity: 0;
+}
+
 
 
