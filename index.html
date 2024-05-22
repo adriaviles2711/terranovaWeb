@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/barnav.css"> <!-- Estilos de la barra de navegacion -->
+
+    <!-- Estilos generales de la web -->
+    <style> 
+        @font-face {
+            font-family: Inlanders;
+            src: url('fonts/Inlanders Demo.otf');
+        }
+        
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f0f9ff;
+        }
+
+        a {
+            text-decoration: none;
+        }
+    </style>
+
+    <link rel="shortcut icon" href="src/img/logo-sigonsa.png">
+    <title>Terranova - Inicio</title>
+</head>
+<body>
+    <!-- Barra de navegacion -->
+    <div id="barnav-anchocentro">
+        <div id="barnav-div">
+            <div id="barnav-logoizq">
+                <img src="https://via.placeholder.com/123x123" alt="">
+            </div>
+
+            <div id="barnav-seccionesder">
+                <ul>
+                    <li class="selected">Inicio</li>
+                    <li><a href="#">Staff</a></li>
+                    <img src="src/billete.png" id="billete" alt="">
+                    <img src="src/billete.png" id="billete2" alt="">
+                    <li id="tienda"><a href="#">Tienda</a></li>
+                    <li><a href="#">Noticias</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tarjeta de jugadores activos -->
+    <div id="card">
+
+    </div>
+
+    <!-- Scripts para la barra de navegacion -->
+    <script>
+        document.getElementById('tienda').addEventListener('mouseover', function() {
+            document.getElementById('billete').style.opacity = '1';
+            document.getElementById('billete2').style.opacity = '1';
+            animateBilletes();
+        });
+
+        document.getElementById('tienda').addEventListener('mouseout', function() {
+            document.getElementById('billete').style.opacity = '0';
+            document.getElementById('billete2').style.opacity = '0';
+        });
+    </script>
+</body>
+</html>
