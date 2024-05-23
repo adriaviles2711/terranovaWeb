@@ -44,7 +44,8 @@
                     <li id="tienda"><a href="#">TIENDA</a></li>
                     <img src="src/noticias.gif" id="livegif" alt="">
                     <li id="noticias"><a href="#">NOTICIAS</a></li>
-                    <li><a href="#">CONTACTO</a></li>
+                    <img src="src/contacto.gif" id="contactogif" alt="">
+                    <li id="contacto"><a href="#">CONTACTO</a></li>
                 </ul>
             </div>
         </div>
@@ -91,6 +92,18 @@
         document.getElementById('staff').addEventListener('mouseout', function() {
             document.getElementById('staffgif').style.opacity = '0';
             document.getElementById('staffgif').style.opacity = '0';
+        });
+
+        /* GIF de CONTACTO */
+        document.getElementById('contacto').addEventListener('mouseover', function() {
+            document.getElementById('contactogif').style.opacity = '1';
+            document.getElementById('contactogif').style.opacity = '1';
+            animateBilletes();
+        });
+
+        document.getElementById('contacto').addEventListener('mouseout', function() {
+            document.getElementById('contactogif').style.opacity = '0';
+            document.getElementById('contactogif').style.opacity = '0';
         });
     </script>
 </body>
