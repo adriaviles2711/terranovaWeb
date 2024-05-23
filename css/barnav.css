@@ -133,3 +133,16 @@
     margin-left: 33px;
     opacity: 0;
 }
+
+#barnav-seccionesder #casainicio {
+    z-index: 1;
+    width: 60px;
+    height: 50px;
+    padding: 0;
+    opacity: 1;
+    transition: all 0.3s ease;
+    position: absolute;
+    margin-left: 13px;
+    top: 7px;
+    opacity: 0;
+}

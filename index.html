@@ -36,7 +36,8 @@
 
             <div id="barnav-seccionesder">
                 <ul>
-                    <li class="selected">INICIO</li>
+                    <img src="src/inicio.gif" id="casainicio" alt="">
+                    <li id="inicio" class="selected">INICIO</li>
                     <img src="src/staff.gif" id="staffgif" alt="">
                     <li id="staff"><a href="#">STAFF</a></li>
                     <img src="src/billete.png" id="billete" alt="">
@@ -58,6 +59,17 @@
 
     <!-- Scripts para la barra de navegacion -->
     <script>
+        /* GIF del INICIO */
+        document.getElementById('inicio').addEventListener('mouseover', function() {
+            document.getElementById('casainicio').style.opacity = '1';
+            document.getElementById('casainicio').style.opacity = '1';
+            animateBilletes();
+        });
+
+        document.getElementById('inicio').addEventListener('mouseout', function() {
+            document.getElementById('casainicio').style.opacity = '0';
+            document.getElementById('casainicio').style.opacity = '0';
+        });
         /* GIF de la TIENDA */
         document.getElementById('tienda').addEventListener('mouseover', function() {
             document.getElementById('billete').style.opacity = '1';
